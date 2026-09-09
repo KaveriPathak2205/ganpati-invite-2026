@@ -31,20 +31,45 @@ export default {
           "radial-gradient(circle at 50% 0%, rgba(201,162,39,0.25), transparent 60%)",
       },
       keyframes: {
-        "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(8px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        petal: {
-          "0%": { transform: "translateY(-10%) rotate(0deg)", opacity: "0" },
-          "10%": { opacity: "1" },
-          "100%": { transform: "translateY(110%) rotate(180deg)", opacity: "0" },
-        },
-      },
+  "fade-in": {
+    "0%": {
+      opacity: "0",
+      transform: "translateY(8px)",
+    },
+    "100%": {
+      opacity: "1",
+      transform: "translateY(0)",
+    },
+  },
+
+  petal: {
+    "0%": {
+      transform: "translateY(-10%) rotate(0deg)",
+      opacity: "0",
+    },
+    "10%": {
+      opacity: "1",
+    },
+    "100%": {
+      transform: "translateY(110%) rotate(180deg)",
+      opacity: "0",
+    },
+  },
+
+  "gentle-float": {
+    "0%, 100%": {
+      transform: "translateY(0px) scale(1)",
+    },
+    "50%": {
+      transform: "translateY(-5px) scale(1.02)",
+    },
+  },
+},
       animation: {
-        "fade-in": "fade-in 0.8s ease-out both",
-        petal: "petal linear infinite",
-      },
+  "fade-in": "fade-in 0.8s ease-out both",
+  petal: "petal linear infinite",
+  "gentle-float": "gentle-float 3s ease-in-out infinite",
+},
     },
   },
   plugins: [],
