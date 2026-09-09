@@ -4,7 +4,7 @@ export default function Schedule() {
   return (
     <section id="schedule" className="mx-auto max-w-2xl px-6 py-14">
       <h2 className="text-center font-display text-2xl text-maroon">
-        Two Days of Divine Celebration !!
+        Ganpati Aagman !!
       </h2>
 
       <div className="mt-10 grid gap-10 sm:grid-cols-2">
